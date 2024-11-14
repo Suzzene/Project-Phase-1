@@ -24,7 +24,8 @@ img = Image.open("crop.png")
 # width is used to set the width of an image
 st.image(img)
 
-df= pd.read_csv('Crop_recommendation.csv')
+df= pd.read_csv('https://raw.githubusercontent.com/Suzzene/Project-Phase-1/refs/heads/main/Crop_recommendation.csv')
+df
 
 #features = df[['temperature', 'humidity', 'ph', 'rainfall']]
 X = df[['N', 'P','K','temperature', 'humidity', 'ph', 'rainfall']]
